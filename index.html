@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/jquery.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//var elementoP = $("div.miClase p");
+		//alert(elementoP.html());
+
+		//$("#miId p").html("Agregando contenido al elemento p del id miId");
+
+
+
+		//Para tablas
+		var nombre=prompt("Escribe un nombre");
+		$("table tbody tr:first").children("td:first").html(nombre);
+		var apellido=prompt("Escribe un apellido");
+		$("table tbody tr:first").children("td:first").next().html(apellido);
+
+
+
+
+	});
+	</script>
+
+
+</head>
+<body>
+<h2>Taller de JQuery</h2>
+<div class="miClase">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do :D
+	</p>
+</div>
+
+<div id="miId">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do.
+	</p>
+</div>
+
+<h2>Tabla Random</h2>
+<table border="1">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Isaac</td>
+			<td>Ojeda Quintana</td>
+		</tr>
+		<tr>
+			<td>Mariana</td>
+			<td>Martinez Almeida</td>
+		</tr>
+	</tbody>
+</table>
+
+
+</body>
+</html>
