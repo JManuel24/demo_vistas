@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="js/jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+		$("#p1").click(function(){
+			$(this).hide("slow").delay(100).show("slow",function(){
+				alert("Este fue el efecto hide y show");
+			});
+		});
+
+   });
+
+
+
+	</script>
+
+</head>
+<body>
+<h2>Efectos y Animaciones en JQuery</h2>
+<h4>Efecto Hide y Show</h4>
+<p id="p1">
+	Esto es una prueba en JQuery
+</p>
+
+
+</body>
+</html>
